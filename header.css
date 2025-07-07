@@ -1,0 +1,74 @@
+/* HEADER */
+
+.main-header {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: url(/img/MG_header_img.jpg) no-repeat top center/cover;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    
+}
+
+.header-bg {
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.nav-bar, .header-content {
+    width: calc(100% - 160px);
+    max-width: 1920px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    margin: 0 80px;
+}
+
+nav a{
+    font-size: 1.125rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+nav a img {
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* align-self: stretch; */
+    gap: 2rem;
+    margin: 0 80px;
+    max-width: 1920px;
+    height: 100vh;
+    /* width: 50vw; */
+}
+
+.header-content > * {
+    width: 50vw;
+} */
+
+.main-header .header-content .heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header-content h3 {
+    font-size: 5.25rem;
+    line-height: 6.375rem;
+    color: var(--white);
+
+}
+
+

@@ -1,0 +1,106 @@
+main {
+    width: calc(100% - 160px);
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    margin: 0 80px;
+
+}
+
+.grid {
+    width: calc(100% - 160px);
+    max-width: 1920px;
+    height: fit-content;
+    min-height: 720px;
+    display: grid;
+    column-gap: 5rem;
+    align-self: stretch;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+
+/* O MNIE Sekcja */
+
+.o_mnie_1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    grid-column: 2 / span 6;
+}
+
+.o_mnie_1 img {
+    grid-column: 8 / span 4;
+}
+
+section {
+    gap: 80px;
+}
+
+section > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    grid-row: 1 / span 1;
+}
+
+.o_mnie_2 img {
+   grid-column: 2 / span 5;
+}
+
+.o_mnie_2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    grid-column: 8 / span 5;
+}
+
+
+/* OFERTA Sekacja */
+
+.oferta_0 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    grid-column: 3 / span 8;
+}
+
+.oferta_1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    grid-column: 2 / span 6;
+}
+
+.oferta_1 img {
+    grid-column: 8 / span 4;
+}
+
+.head_line {
+    position: relative;
+}
+
+.head_line h4 {
+    padding-left: 5rem;
+}
+
+.number {
+    position: absolute;
+    bottom: -26px;
+    font-size: 14rem;
+    line-height: 15rem;
+    font-weight: 600;
+    color: var(--decoration);
+    z-index: -1;
+}
