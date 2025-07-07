@@ -75,20 +75,6 @@ section > * {
     grid-column: 3 / span 8;
 }
 
-/* .oferta_1 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    grid-column: 2 / span 6;
-}
-
-.oferta_1 img {
-    grid-column: 8 / span 4;
-} */
-
 .head_line {
     position: relative;
 }
