@@ -20,21 +20,36 @@ main {
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-
-/* O MNIE Sekcja */
-
-.o_mnie_1 .content {
+.grid_text_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    align-self: stretch;
     gap: 24px;
-    grid-column: 2 / span 6;
+    ;grid-column: 2 / span 6;
 }
 
-.o_mnie_1 img {
+.grid_img_right {
     grid-column: 8 / span 4;
 }
+
+
+.grid_img_left {
+    grid-column: 2 / span 5;
+}
+
+.grid_text_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-column: 8 / span 5
+}
+
+/* O MNIE Sekcja */
 
 section {
     gap: 80px;
@@ -46,19 +61,6 @@ section > * {
     align-items: center;
     gap: 80px;
     grid-row: 1 / span 1;
-}
-
-.o_mnie_2 img {
-   grid-column: 2 / span 5;
-}
-
-.o_mnie_2 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    grid-column: 8 / span 5;
 }
 
 
@@ -73,7 +75,7 @@ section > * {
     grid-column: 3 / span 8;
 }
 
-.oferta_1 .content {
+/* .oferta_1 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +87,7 @@ section > * {
 
 .oferta_1 img {
     grid-column: 8 / span 4;
-}
+} */
 
 .head_line {
     position: relative;
