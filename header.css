@@ -64,6 +64,14 @@ nav a img {
     gap: 2.5rem;
 }
 
+.heading::before {
+    content: "";
+    display: inline-block;
+    width: 4.5rem;
+    height: 0.125rem;
+    background: var(--gold);
+}
+
 .header-content h3 {
     font-size: 5.25rem;
     line-height: 6.375rem;

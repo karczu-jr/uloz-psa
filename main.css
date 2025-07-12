@@ -27,7 +27,7 @@ main {
     align-items: flex-start;
     align-self: stretch;
     gap: 24px;
-    ;grid-column: 2 / span 6;
+    grid-column: 2 / span 6;
 }
 
 .grid_img_right {
@@ -47,6 +47,19 @@ main {
     align-self: stretch;
     gap: 24px;
     grid-column: 8 / span 5
+}
+
+@media (max-width: 1680px) {
+
+    main {
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    }
+
+    /* .grid_text_left {
+        grid-column: 1 / span 6;
+    } */
+
 }
 
 /* O MNIE Sekcja */
@@ -76,19 +89,23 @@ section > * {
 }
 
 .head_line {
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-flow: row;
+    align-items: last baseline;
 }
 
 .head_line h4 {
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
+    margin-left: -3rem;
 }
 
 .number {
-    position: absolute;
-    bottom: -26px;
+    /* position: absolute;
+    bottom: -26px; */
     font-size: 14rem;
     line-height: 15rem;
     font-weight: 600;
     color: var(--decoration);
-    z-index: -1;
+    /* z-index: -1; */
 }
