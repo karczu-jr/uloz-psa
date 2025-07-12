@@ -49,16 +49,30 @@ main {
     grid-column: 8 / span 5
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1460px) {
 
-    main {
+    /* main {
         width: calc(100% - 80px);
         margin: 0 40px;
+    } */
+
+    .grid_text_left {
+        grid-column: 1 / span 6;
     }
 
-    /* .grid_text_left {
-        grid-column: 1 / span 6;
-    } */
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 5;
+    }
+
+    .grid_text_right {
+        grid-column: 8 / span 6;
+    }
+
+
 
 }
 
