@@ -1,0 +1,60 @@
+/* MEDIA - RWD */
+@media (min-width: 1921px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1680px) {
+
+    
+
+}
+
+@media (max-width: 1440px) {
+
+    h1, h2 {
+    font-size: 1.25rem;
+    /*
+    font-weight: 700;
+    letter-spacing: 37,5%;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 2.5rem; */
+    }
+
+    body {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+    
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+    }
+
+    .grid_text_left {
+        grid-column: 1 / span 7;
+    }
+
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 6;
+    }
+
+    .grid_text_right {
+        grid-column: 7 / span 6;
+    }
+}
