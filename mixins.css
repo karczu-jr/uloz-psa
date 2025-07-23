@@ -7,34 +7,28 @@
 
 @media (max-width: 1680px) {
 
-    
-
 }
 
 @media (max-width: 1440px) {
 
     h1, h2 {
-    font-size: 1.25rem;
-    /*
-    font-weight: 700;
-    letter-spacing: 37,5%;
-    text-transform: uppercase;
-    color: var(--gold);
-    display: inline-flex;
-    align-items: center;
-    gap: 2.5rem; */
+    --font-size: 1.25rem;
+    }
+
+    h3 {
+    --font-size-h3: 4.5rem;
+    }
+    
+    h4 {
+        font-size: 4rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
     }
 
     body {
         font-size: 1.25rem;
-    }
-
-    h3 {
-        font-size: 4rem;
-    }
-    
-    h4 {
-        font-size: 2.5rem;
     }
 
     main {
@@ -56,5 +50,52 @@
 
     .grid_text_right {
         grid-column: 7 / span 6;
+    }
+}
+
+@media (max-width: 1280px) {
+
+
+    svg.puzzels, svg.puzzel {
+        scale: 75%;
+    }
+
+    svg.puzzels {
+        left: -108px;
+    }
+
+    .img_o_mnie_1 .puzzel {
+        bottom: -19px;
+        right: -16px;
+    }
+
+    .img_o_mnie_2 .puzzel {
+        top: -29px;
+        right: -6px;
+        rotate: -90deg;
+    }
+
+    .img_oferta_1 .puzzel {
+        top: -59px;
+        left: -16px;
+        rotate: -180deg;
+    }
+
+    .img_oferta_2 .puzzel {
+        bottom: -42px;
+        right: -16px;
+        rotate: 0deg;
+    }
+
+    .img_oferta_3_1 .puzzel {
+        top: -69px;
+        right: -6px;
+        rotate: -90deg;
+    }
+
+    .img_oferta_3_2 .puzzel {
+        bottom: -53px;
+        left: -6px;
+        rotate: 90deg;
     }
 }
