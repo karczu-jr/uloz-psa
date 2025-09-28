@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     overflow: hidden;
 
     /* position: relative;
@@ -54,6 +55,20 @@ picture img {
 
 
 
+=======
+    /* background: url(/img/MG_header_img.jpg) no-repeat top center/cover;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    
+}
+
+.header-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
 /* .header-bg-try {
     position: relative;
     width: 100vw;
@@ -64,6 +79,7 @@ picture img {
     overflow-x: hidden;
 } */
 
+<<<<<<< HEAD
 
 /* Elementy na zdjęciu */
 
@@ -93,6 +109,28 @@ picture img {
     /* display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(3,minmax(0, 1fr)); */
+=======
+.header-bg svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.nav-bar, .header-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    /* margin: 0 80px; */
+}
+
+.nav-bar {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
 }
 
 nav ul {
@@ -114,22 +152,37 @@ nav a img {
     align-items: center;
 }
 
+<<<<<<< HEAD
 /* TREŚĆ */
 
+=======
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
 .header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+<<<<<<< HEAD
     gap: 2rem;
     height: 100vh;
+=======
+    /* align-self: stretch; */
+    gap: 2rem;
+    margin: 0 80px;
+    height: 100vh;
+    /* width: 50vw; */
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
 }
 
 .header-content > * {
     width: 50vw;
 }
 
+<<<<<<< HEAD
 .heading {
+=======
+.main-header .header-content .heading {
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
     display: inline-flex;
     align-items: center;
     gap: 2.5rem;
@@ -143,6 +196,7 @@ nav a img {
     background: var(--gold);
 }
 
+<<<<<<< HEAD
 /* SVG puzzel */
 
 .header-bg svg {
@@ -159,3 +213,5 @@ nav a img {
 
 
 
+=======
+>>>>>>> 4775cd837eb53babe0b300f9c6e8b38ee9ab06be
