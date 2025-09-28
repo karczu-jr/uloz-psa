@@ -1,0 +1,102 @@
+/* HEADER */
+
+.main-header {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: url(/img/MG_header_img.jpg) no-repeat top center/cover;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    
+}
+
+.header-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* .header-bg-try {
+    position: relative;
+    width: 100vw;
+    min-width: 100vw;
+    height: 140vh;
+    background: url(./img/header_img.jpg) no-repeat center center;
+    background-size: cover;
+    overflow-x: hidden;
+} */
+
+.header-bg svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.nav-bar, .header-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    /* margin: 0 80px; */
+}
+
+.nav-bar {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+}
+
+nav ul {
+    justify-content: center;
+}
+
+nav a{
+    font-size: 1.125rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav-bar > :last-child {
+    justify-self: right;
+}
+
+nav a img {
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* align-self: stretch; */
+    gap: 2rem;
+    margin: 0 80px;
+    height: 100vh;
+    /* width: 50vw; */
+}
+
+.header-content > * {
+    width: 50vw;
+}
+
+.main-header .header-content .heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.heading::before {
+    content: "";
+    display: inline-block;
+    width: 4.5rem;
+    height: 0.125rem;
+    background: var(--gold);
+}
+

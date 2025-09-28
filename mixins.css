@@ -1,0 +1,315 @@
+/* MEDIA - RWD */
+@media (min-width: 1921px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1680px) {
+
+}
+
+@media (max-width: 1440px) {
+
+    h1, h2 {
+    --font-size: 1.25rem;
+    }
+
+    h3 {
+    --font-size-h3: 4.5rem;
+    }
+    
+    h4 {
+        font-size: 4rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+    }
+
+    .number {
+        font-size: 10rem;
+        line-height: 11rem;
+    }
+
+    body {
+        font-size: 1.25rem;
+    }
+
+    main {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+    }
+
+    .oferta :first-child {
+        margin-top: 0;
+    }
+
+    .grid_text_left {
+        grid-column: 1 / span 7;
+    }
+
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 6;
+    }
+
+    .grid_text_right {
+        grid-column: 7 / span 6;
+    }
+
+    /* PUZLE */
+
+    svg.puzzels, svg.puzzel {
+        transform: scale(.85);
+    }
+
+}
+
+/* 1280 px */
+
+@media (max-width: 1280px) {
+
+    h1, h2 {
+    --font-size: 1rem;
+    gap: 1.75rem;
+    }
+
+    .heading::before {
+        width: 3rem;
+    }
+
+    h3 {
+    --font-size-h3: 4.5rem;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    .number {
+        font-size: 10rem;
+        line-height: 11rem;
+    }
+
+    main {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+    }
+
+    .oferta :first-child {
+        margin: 0;
+    }
+
+    .grid {
+        min-height: 600px;
+    }
+
+    .grid_text_left {
+        grid-column: 1 / span 7;
+    }
+
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 6;
+    }
+
+    .grid_text_right {
+        grid-column: 7 / span 6;
+    }
+
+    /* PUZLE */
+
+
+    svg.puzzels, svg.puzzel {
+        transform: scale(.75);
+    }
+}
+
+/* 1024 px */
+
+@media (max-width: 1024px) {
+
+    .nav-bar, .header-content, main{
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    }
+
+    .header-content > * {
+        width: 100%;
+    }
+
+    h3 {
+    --font-size-h3: 3.5rem;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    .number {
+        font-size: 10rem;
+        line-height: 11rem;
+    }
+
+    .oferta_0 .content {
+    grid-column: 2 / span 10;
+}
+
+    .oferta :first-child {
+        margin: 0;
+    }
+
+    .grid {
+        min-height: 600px;
+    }
+
+    .grid_text_left {
+        grid-column: 1 / span 7;
+    }
+
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 6;
+    }
+
+    .grid_text_right {
+        grid-column: 7 / span 6;
+    }
+
+    /* PUZLE */
+
+    svg.puzzels, svg.puzzel {
+        transform: scale(.6);
+    }
+}
+
+/* 768 px */
+
+@media (max-width: 768px) {
+
+    .nav-bar, .header-content, main{
+        width: calc(100% - 48px);
+        margin: 0 24px;
+    }
+
+    .header-content {
+        gap: 1rem;
+        height: 80%;
+    }
+
+    h3 {
+    --font-size-h3: 3rem;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        height: fit-content;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .oferta_0 .content {
+        grid-row: 1/span 2;
+        grid-column: 1/ span 4;
+        height: auto;
+    }
+
+    .grid_text_left {
+        grid-row: 1 /span 1;
+        grid-column: 1 / span 4;
+    }
+
+    .grid_img_right {
+        grid-row: 2 /span 1;
+        grid-column: 1 / span 4;
+    }
+
+    .grid_img_left {
+        grid-row: 2 /span 1;
+        grid-column: 1 / span 4;
+    }
+
+    .grid_text_right {
+        grid-row: 1 /span 1;
+        grid-column: 1 / span 4;
+    }
+
+    /* PUZLE */
+
+    svg.puzzels, svg.puzzel {
+        transform: scale(.45);
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+
+    .nav-bar, .header-content, main{
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+
+    .header-content {
+        height: 80%;
+        gap: 0.5rem;
+    }
+
+    h1 {
+        --font-size: 0.825rem;
+    }
+
+    .main-header .header-content .heading {
+        gap: 1rem;
+    }
+
+    .heading::before {
+        width: 2rem;
+    }
+
+    h3 {
+    --font-size-h3: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 2.25rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    /* PUZLE */
+
+    svg.puzzels, svg.puzzel {
+        transform: scale(.4);
+    }
+}

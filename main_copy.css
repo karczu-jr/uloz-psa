@@ -1,0 +1,138 @@
+main {
+    width: calc(100% - 160px);
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    margin: 0 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > * {
+    margin-bottom: 80px;
+}
+
+.grid {
+    width: calc(100% - 160px);
+    max-width: 1920px;
+    height: fit-content;
+    min-height: 720px;
+    display: grid;
+    column-gap: 5rem;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid_text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-column: 2 / span 6;
+}
+
+.grid_img_right {
+    grid-column: 8 / span 4;
+}
+
+
+.grid_img_left {
+    grid-column: 2 / span 5;
+}
+
+.grid_text_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-column: 7 / span 5
+}
+
+/* MEDIA - RWD */
+
+@media (min-width: 1921px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1460px) {
+
+    /* main {
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    } */
+
+    .grid_text_left {
+        grid-column: 1 / span 7;
+    }
+
+    .grid_img_right {
+        grid-column: 8 / span 5;
+    }
+
+    .grid_img_left {
+        grid-column: 1 / span 6;
+    }
+
+    .grid_text_right {
+        grid-column: 7 / span 6;
+    }
+}
+
+/* O MNIE Sekcja */
+
+section {
+    gap: 80px;
+}
+
+section > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    grid-row: 1 / span 1;
+}
+
+
+/* OFERTA Sekacja */
+
+.oferta_0 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    grid-column: 3 / span 8;
+}
+
+.head_line {
+    /* position: relative; */
+    display: flex;
+    flex-flow: row;
+    align-items: last baseline;
+}
+
+.head_line h4 {
+    /* padding-left: 5rem; */
+    margin-left: -3rem;
+}
+
+.number {
+    /* position: absolute;
+    bottom: -26px; */
+    font-size: 14rem;
+    line-height: 15rem;
+    font-weight: 600;
+    color: var(--decoration);
+    /* z-index: -1; */
+}

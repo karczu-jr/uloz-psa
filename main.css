@@ -1,0 +1,215 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+    margin: 0 auto;
+}
+
+.oferta :first-child{
+    min-height: auto;
+    /* margin-top: 40px; */
+    /* margin-bottom: 24px; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > * {
+    /* margin-bottom: 80px; */
+}
+
+.grid {
+    height: fit-content;
+    min-height: 720px;
+    display: grid;
+    column-gap: 5rem;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid_oferta_3 {
+    min-height: 1370px;
+    row-gap: 1.5rem;
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+}
+
+.grid_oferta_3 .grid_text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-row: 1 / span 6;
+    grid-column: 2 / span 6;
+}
+
+.grid_oferta_3 .grid_img_right {
+    position: relative;
+    grid-row: 1 / span 7;
+    grid-column: 8 / span 4;
+    width: auto;
+    height: 100%;
+}
+
+.grid_oferta_3 .grid_img_center {
+    position: relative;
+    grid-row: 7 / span 3;
+    grid-column: 3 / span 8;
+    width: auto;
+    height: 100%;
+}
+
+.grid_text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-column: 2 / span 6;
+}
+
+.grid_img_right {
+    position: relative;
+    grid-column: 8 / span 4;
+    width: auto;
+    height: 100%;
+}
+
+.grid_img_left {
+    position: relative;
+    grid-column: 2 / span 5;
+    width: auto;
+    height: 100%;
+}
+
+.grid_text_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    grid-column: 7 / span 5
+}
+
+.img_o_mnie_1 {
+    background: url(./img/o_mnie_1.jpg) no-repeat center/cover;
+}
+
+.img_o_mnie_2 {
+    background: url(./img/o_mnie_2.jpg) no-repeat center/cover;
+}
+
+.img_oferta_1 {
+    background: url(./img/oferta_1.jpg) no-repeat center/cover;
+}
+
+.img_oferta_2 {
+    background: url(./img/oferta_2.jpg) no-repeat center/cover;
+}
+
+.img_oferta_3_1 {
+    background: url(./img/oferta_3.1.jpg) no-repeat center/cover;
+}
+
+.img_oferta_3_2 {
+    background: url(./img/oferta_3.2.jpg) no-repeat center/cover;
+}
+
+/* PUZLE w zdjęciach */
+
+.puzzel {
+    position: absolute;
+    transform-box: fill-box;
+}
+
+.img_o_mnie_1 .puzzel {
+    bottom: 0;
+    right: -1px;
+    transform-origin: bottom right;
+}
+
+.img_o_mnie_2 .puzzel {
+    top: -1px;
+    right: -1px;
+    transform-origin: top right;
+}
+
+.img_oferta_1 .puzzel {
+    top: 0;
+    left: -1px;
+    transform-origin: top left;
+}
+
+.img_oferta_2 .puzzel {
+    bottom: 0;
+    right: -1px;
+    transform-origin: bottom right;
+}
+
+.img_oferta_3_1 .puzzel {
+    top: -1px;
+    right: -1px;
+    transform-origin: top right;
+}
+
+.img_oferta_3_2 .puzzel {
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+}
+
+
+
+
+/* O MNIE Sekcja */
+
+section {
+    gap: 80px;
+}
+
+section > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    grid-row: 1 / span 1;
+}
+
+/* OFERTA Sekcja */
+
+.oferta_0 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    grid-column: 3 / span 8;
+}
+
+.head_line {
+    /* position: relative; */
+    display: flex;
+    flex-flow: row;
+    align-items: last baseline;
+}
+
+.head_line h5 {
+    /* padding-left: 5rem; */
+    margin-left: -3rem;
+}
+
+.number {
+    /* position: absolute;
+    bottom: -26px; */
+    font-size: 14rem;
+    line-height: 15rem;
+    font-weight: 600;
+    color: var(--decoration);
+    /* z-index: -1; */
+}
