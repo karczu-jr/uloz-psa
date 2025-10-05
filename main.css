@@ -142,14 +142,14 @@ section > * {
 }
 
 .img_o_mnie_1 .puzzel {
-    bottom: 0;
-    right: -1px;
+    bottom: -240px;
+    right: -240px;
     transform-origin: bottom right;
 }
 
 .img_o_mnie_2 .puzzel {
-    top: -1px;
-    right: -1px;
+    top: -146px;
+    right: -266px;
     transform-origin: top right;
 }
 
@@ -183,7 +183,7 @@ section > * {
 /* O MNIE Sekcja */
 
 section {
-    gap: 80px;
+    gap: 120px;
 }
 
 section > * {
