@@ -143,26 +143,26 @@ section > * {
 
 .img_o_mnie_1 .puzzel {
     bottom: -240px;
-    right: -240px;
+    right: -145px;
     transform-origin: bottom right;
 }
 
 .img_o_mnie_2 .puzzel {
-    top: -146px;
-    right: -266px;
+    top: -265px;
+    right: -120px;
     transform-origin: top right;
 }
 
 .img_oferta_1 .puzzel {
-    top: 0;
-    left: -1px;
+    top: -265px;
+    left: -240px;
     transform-origin: top left;
 }
 
 .img_oferta_2 .puzzel {
-    bottom: 0;
-    right: -1px;
-    transform-origin: bottom right;
+    top: -385px;
+    left: -145px;
+    transform-origin: top left;
 }
 
 .img_oferta_3_1 .puzzel {
@@ -197,6 +197,7 @@ section > * {
 /* OFERTA Sekcja */
 
 .oferta_0 .content {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
