@@ -172,9 +172,9 @@ section > * {
 }
 
 .img_oferta_3_2 .puzzel {
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom left;
+    top: -145px;
+    right: -145px;
+    transform-origin: top right;
 }
 
 
