@@ -166,9 +166,9 @@ section > * {
 }
 
 .img_oferta_3_1 .puzzel {
-    top: -1px;
-    right: -1px;
-    transform-origin: top right;
+    top: -145px;
+    left: -265px;
+    transform-origin: top left;
 }
 
 .img_oferta_3_2 .puzzel {
