@@ -30,6 +30,16 @@ section > * {
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.hide-desktop {
+    display: none;
+}
+
+.visible-desktop {
+    display: block;
+}
+
+
+
 .grid_oferta_3 {
     min-height: 1370px;
     row-gap: 1.5rem;
@@ -139,6 +149,10 @@ section > * {
 .puzzel {
     position: absolute;
     transform-box: fill-box;
+}
+
+.stroke {
+    fill-opacity: 0.25;
 }
 
 .img_o_mnie_1 .puzzel {
