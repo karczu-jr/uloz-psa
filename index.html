@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./mixins.css">
+    <link rel="stylesheet" href="./footer.css">
     <title>Ułóż psa z Magdą Grzybalską | Szkolenie psów w Gliwicach i na śląsku</title>
 </head>
 <body>
     <header class="main-header">
 
         <div class="nav-bar">
-            <a href="">
+            <a class="logo" href="">
                 <img src="./img/logo-white.svg" alt="">
             </a>
-            <nav>
+            <nav class="main-nav" aria-label="Nawigacja główna">
                 <ul>
                     <li>
                         <a href="">O mnie</a>
@@ -32,9 +33,24 @@
                     </li>
                 </ul>
             </nav>
-            <a href="">
-                <img src="./img/Insta.svg" alt="">Instagram
-            </a>
+            <nav class="sm-nav" aria-label="Nawigacja Social Media">
+                <p>Obserwuj nas na:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/stories/bravcio_sky/">
+                            <img src="./img/Insta.svg" alt="Kont Instagram użytkownika Bravio i Sky">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/magdalena.grzybalska">
+                            <img src="./img/Facebook.svg" alt="Konto Facebook użytkownika Magdalena Grzybalska">
+                        </a>
+                    </li>
+                </ul>
+                
+                
+            </nav>
+            
         </div>
 
         <div class="header-bg">
@@ -432,5 +448,25 @@
 
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <a class="logo" href="">
+                <img src="./img/logo-white.svg" alt="">
+            </a>
+            <div>
+                <p>Projekt i wykonanie:</p>
+                <a href="">Mateusz Karcz</a>
+            </div>
+            <nav class="sm" aria-label="Nawigacja Social Media">
+                <p>Obserwuj nas na:</p>
+                <a href="https://www.instagram.com/stories/bravcio_sky/">
+                    <img src="./img/Insta.svg" alt="Kont Instagram użytkownika Bravio i Sky">
+                </a>
+                <a href="https://www.facebook.com/magdalena.grzybalska">
+                    <img src="./img/Facebook.svg" alt="Konto Facebook użytkownika Magdalena Grzybalska">
+                </a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

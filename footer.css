@@ -1,0 +1,49 @@
+footer {
+    z-index: 5;
+    background-color: var(--footer-color);
+    margin-top: 160px;
+}
+
+.footer {
+    position: absolute;
+    margin: 0 80px;
+    width: calc(100% - 160px);
+
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    padding:  1rem 0 1.5rem 0;
+}
+
+.footer > * {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer .logo {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: var(--font-color);
+    font-size: 1.125rem;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer a img {
+    display: block;
+    color: var(--font-color);
+}
+
+.footer p {
+    font-size: 1.125rem;
+}
+
+.footer > :last-child {
+    justify-self: right;
+}

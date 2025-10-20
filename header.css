@@ -88,7 +88,7 @@ picture img {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    padding: 1.5rem 0;
+    padding:  1rem 0 1.5rem 0;
 
     /* display: grid;
     column-gap: 2rem;
@@ -99,20 +99,43 @@ nav ul {
     justify-content: center;
 }
 
-nav a{
+.main-nav ul {
+    gap: 2.5rem;
+}
+
+nav a {
     font-size: 1.125rem;
     font-weight: 600;
     align-items: center;
     justify-content: left;
 }
 
+.logo {
+    margin-bottom: 0.5rem;
+}
+
 .nav-bar > :last-child {
     justify-self: right;
 }
 
-nav a img {
+.sm-nav {
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
     align-items: center;
 }
+
+.sm-nav p {
+    font-size: 1.125rem;
+    margin-right: 4px;
+}
+
+.sm-nav a img {
+    display: block;
+}
+
+
 
 /* TREŚĆ */
 

@@ -14,6 +14,7 @@ html {
     --font-color: #4d4d4d;
     --background: #F9F3ED;
     --decoration: #E6E6E6;
+    --footer-color: #F2E6D9;
 }
 
 body {
@@ -84,6 +85,5 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
 }
 
