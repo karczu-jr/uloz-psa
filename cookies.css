@@ -1,0 +1,63 @@
+div.termsfeed-com---palette-light.termsfeed-com---nb {
+    background-color: #E8D4C2; 
+    color: var(--font-color);
+}
+
+.cc-nb-title-container .cc-nb-title {
+    font-family: 'Kalnia', serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.cc-nb-text-content {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: normal; 
+}
+
+.cc-nb-buttons-container {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.cc-nb-buttons-container .cc-nb-okagree,
+.cc-nb-buttons-container .cc-nb-reject,
+.cc-nb-buttons-container .cc-nb-changep {
+    font-weight: 600;
+}
+
+.cc-nb-main-container .cc-nb-buttons-container .cc-nb-okagree,
+.termsfeed-com---palette-light .cc-nb-okagree,
+.cc-nb-main-container .cc-nb-buttons-container .cc-nb-reject,
+.termsfeed-com---palette-light .cc-nb-reject {
+    background-color: var(--gold);
+    border: var(--white) solid 2px;
+    color: #000;
+}
+
+.cc-nb-main-container .cc-nb-buttons-container .cc-nb-changep {
+    border: var(--gold) solid 2px;
+}
+
+@media screen and (max-width: 1280px) {
+    div.termsfeed-com---nb-simple {
+        max-width: 100%;    
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    div.termsfeed-com---nb-simple {
+        max-width: 100%;    
+    }
+} */
+
+@media (max-width: 485px) {
+    div.termsfeed-com---nb div.cc-nb-main-container {
+        padding: 1.5rem;
+    }
+
+    .cc-nb-main-container .cc-nb-buttons-container .cc-nb-okagree,
+    .cc-nb-main-container .cc-nb-buttons-container .cc-nb-reject,
+    .cc-nb-main-container .cc-nb-buttons-container .cc-nb-changep {
+        text-align: center;
+    }
+}

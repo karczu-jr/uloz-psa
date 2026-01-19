@@ -5,6 +5,20 @@
     }
 }
 
+@media (min-width: 2000px) {
+
+    .carousel-content {
+        grid-column: 3 / span 8;
+    }
+
+}
+
+@media (max-width: 1920px) {
+
+    
+
+}
+
 @media (max-width: 1680px) {
 
 }
@@ -25,6 +39,10 @@
 
     h5 {
         font-size: 2.5rem;
+    }
+
+    h6 {
+        font-size: 2rem;
     }
 
     
@@ -66,10 +84,22 @@
         grid-column: 7 / span 6;
     }
 
+    .carousel-section {
+        display: flex;
+    }
+
+    .carousel-content {
+        width: 100%;
+    }
+
     /* PUZLE */
 
     svg.puzzels, svg.puzzel {
         transform: scale(.80);
+    }
+
+    .oferta .puzzels {
+        right: -80px;
     }
 
     .img_o_mnie_1 .puzzel {
@@ -106,6 +136,19 @@
         top: -116px;
         right: -116px;
         transform-origin: top right;
+    }
+
+    .testi-puzzels-1 {
+        top: 0;
+    }
+
+    .testi-puzzels-2 {
+        bottom: 0;
+    }
+
+    .contact svg {
+        bottom: -20px;
+        right: -116px;
     }
 
 }
@@ -147,6 +190,10 @@
     h5 {
         font-size: 2rem;
     }
+    
+    h6 {
+        font-size: 1.75rem;
+    }
 
     .number {
         font-size: 10rem;
@@ -179,6 +226,10 @@
     }
 
     /* PUZLE */
+
+    .oferta .puzzels {
+        right: -40px;
+    }
 
 
     /* svg.puzzels, svg.puzzel {
@@ -251,11 +302,198 @@
         right: -87px;
     }
 }
+
 /* 991 px */
+
+@media (max-width: 991px) {
+
+    /* NAWIGACJA MOBILNA */
+
+    .nav-bar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-nav, .sm-nav {
+        display: none;
+    }
+
+    .toggle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 48px;
+        height: 48px;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        z-index: 110;
+
+        justify-self: end;
+    }
+
+    .toggle span {
+        display: block;
+        width: 32px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--white);
+        transition: all 0.35s ease;
+    }
+
+    .toggle span:last-child {
+        width: 16px;
+        margin-left: auto;
+    }
+
+    .toggle:hover span:last-child {
+        background: var(--gold);
+        width: 32px; /* pełna szerokość jak górne paski */
+    }
+
+    .toggle.active span:nth-child(1) {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+
+    .toggle.active span:nth-child(2) {
+        transform: rotate(45deg);
+        width: 32px;
+        background: var(--font-color);
+    }
+
+    .toggle.active span:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--font-color);
+        transform: rotate(-90deg);
+        transition: transform 0.35s ease;
+    }
+
+    .toggle.active span:nth-child(3) {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    .toggle.active:hover span,
+    .toggle.active:hover span::after {
+        background: var(--gold);
+        transition: all 0.35s ease;
+    }
+
+    /* MENU MOBILNE - PODSTAWY */
+
+    .navigation_mobile {
+        position: fixed;
+        inset: 0;
+        height: 100vh;
+        width: 100%;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 10;
+    }
+
+    .navigation_mobile.active {
+        transform: translateX(0);
+    }
+
+    /* --- ANIMACJA POJAWIANIA LINKÓW --- */
+
+    .navigation_mobile ul {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    .navigation_mobile.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation_mobile.active ul {
+        opacity: 1;
+        animation: fadeInMenu 0.6s ease forwards;
+    }
+
+    .navigation_mobile a {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--font-color);
+        text-decoration: none;
+    }
+
+    .navigation_mobile_sm {
+        margin-top: 32px;
+    }
+
+    .navigation_mobile.active .navigation_mobile_sm ul {
+        flex-direction: row;
+    }
+
+    /* .navigation_mobile.active .navigation_mobile_sm ul a {
+        font-size: 1rem;
+    } */
+
+    .navigation_mobile.active .navigation_mobile_sm ul a svg {
+        display: block;
+        transform: scale(140%);
+    }
+
+    .navigation_mobile_sm p {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    @keyframes fadeInMenu {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .navigation_mobile ul li {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInItem 0.5s ease forwards;
+    }
+
+    /* pojawianie się po kolei */
+    .navigation_mobile.active ul li:nth-child(1) { animation-delay: 0.2s; }
+    .navigation_mobile.active ul li:nth-child(2) { animation-delay: 0.4s; }
+    .navigation_mobile.active ul li:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes fadeInItem {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
 
 @media (min-width: 769px) and (max-width: 991px) {
 
-    .nav-bar, .header-content, main{
+    .nav-bar, .header-content, main{ 
         width: calc(100% - 48px);
         margin: 0 24px;
     }
@@ -323,6 +561,10 @@
         transform: scale(.5);
     }
 
+    .oferta svg.puzzels {
+        transform: scale(.5)
+    }
+
     .puzzel_mobile_1 {
         bottom: -240px;
         right: -205px;
@@ -331,6 +573,10 @@
     .img_o_mnie_2 .puzzel {
         top: -133px;
         right: -60px;
+    }
+
+    .oferta .puzzels {
+        right: -24px;
     }
 
     .img_oferta_1 .puzzel {
@@ -359,6 +605,10 @@
 
 @media (max-width: 768px) {
 
+    main {
+        gap: 0;
+    }
+
     .nav-bar, .header-content, main{
         width: calc(100% - 48px);
         margin: 0 24px;
@@ -373,20 +623,22 @@
     --font-size-h3: 3rem;
     }
     
-    h4 {
-        font-size: 3rem;
-    }
-
-    h5 {
-        font-size: 2rem;
-    }
-
     .grid {
         height: fit-content;
         display: grid;
-        column-gap: 1rem;
+        column-gap: 2.5rem;
         grid-template-rows: repeat(2, minmax(0, 1fr));
         grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        min-height: auto;
+    }
+
+    main > .oferta::before {
+        background: linear-gradient(180deg, #F9F3ED10 0%, #BA834B20 5%, #BA834B20 100%); /* Twoje tło */
+    }
+
+    .oferta {
+        padding-bottom: 160px;
     }
 
     .oferta_0 .content {
@@ -449,6 +701,10 @@
         gap: 56px;
     }
 
+    .grid {
+        gap: 80px;
+    }
+
     .grid_text_left {
         gap: 0;
     }
@@ -469,24 +725,21 @@
         font-size: 2.25rem;
     }
 
-    h5 {
-        font-size: 2rem;
-    }
-
     .grid {
         display: flex;
         flex-direction: column;
+        gap: 40px
     }
 
     .o-mnie > :nth-child(2) {
         flex-direction: column-reverse
     }
 
-    .oferta > :nth-child(3) {
+    .oferta > :nth-child(4) {
         flex-direction: column-reverse;
     }
 
-    .oferta > :nth-child(5) {
+    .oferta > :nth-child(6) {
         flex-direction: column-reverse;
     }
 
@@ -498,6 +751,29 @@
     .grid_img_left {
         width: 100%;
         height: 240px;
+    }
+
+    /* KONTAKT */
+
+    .contact {
+        margin-top: 120px;
+    }
+
+    .contact_wrapper {
+        margin-top: 32px;
+    }
+
+    .contact a {
+        font-size: 2rem;
+    }
+
+    .contact_details_wrapper {
+        gap: 4px;
+    }
+
+    .img_contact {
+        aspect-ratio: 1 /1 ;
+        height: auto;
     }
 
     /* PUZLE */
@@ -514,6 +790,10 @@
     .img_o_mnie_2 .puzzel {
         top: -106px;
         right: -48px;
+    }
+
+    .oferta .puzzels {
+        right: -16px;
     }
 
     .img_oferta_1 .puzzel {
@@ -535,4 +815,84 @@
         top: -58px;
         right: -58px;
     }
+
+    .img_contact .puzzel {
+        bottom: -96px;
+        right: -58px;
+    }
+
+    .contact svg {
+        bottom: -10px;
+        right: -58px;
+    }
+
+    /* KARUZELA */
+
+    .carousel-header {
+        text-align: center;
+    }
+
+    .carousel-cards {
+         min-height: 540px;
+    }
+
+    .carousel-card {
+        flex-direction: column;
+        gap: 24px;
+
+        align-items: flex-start;
+    }
+
+    .carousel-image {
+        height: 160px;
+        width: auto;
+    }
+
+    .carousel-text {
+        position: relative;
+    }
+
+    .carousel-image-mobile {
+        gap: 16px;
+    }
+
+    .carousel-image-mobile h6 {
+        display: block;
+    }
+
+    .carousel-text h6 {
+        display: none;
+    } 
+
+    .slide-button {
+        padding: 8px;
+    }
+
+    .slide-button svg {
+        height: 32px;
+        width: auto;
+    }
+
+    .counter-text {
+        width: 48px;
+        font-size: 1.5rem;
+    }
+
+    .quote {
+        right: 0;
+    }
+
+    /* KONTAKT */
+
+    .contact {
+        flex-direction: column;
+    }
+
+    /* STOPKA */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
+

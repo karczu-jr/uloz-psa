@@ -6,14 +6,15 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --gold: #C99A69;
+    --gold: #BA834B;
     --white: #fff;
     --font-color: #4d4d4d;
     --background: #F9F3ED;
-    --decoration: #E6E6E6;
+    --decoration: #E8D4C0;
     --footer-color: #F2E6D9;
 }
 
@@ -23,7 +24,7 @@ body {
     /* Fonts */
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 200%;
+    line-height: 175%;
     color: var(--font-color);
 
     /* Background */
@@ -74,6 +75,10 @@ h4 {
 h5 {
     font-size: 3rem;
     line-height: auto;
+}
+
+h6 {
+    font-size: 2.25rem;
 }
 
 a {
